@@ -6,12 +6,14 @@
         * {
             padding: 0;
         }
-		#search {
-
-		}
-        form input {
-            width: 100%;
+		#search {}
+        label {
+            display:inline-block; 
+            width: 100%;    
         }
+        form input:not([type="checkbox","radio"]):not([type="radio"]) {
+            width: 100%;
+        } 
 		.container {
             width: 320px;
             background-color: #483D8B;
@@ -34,6 +36,53 @@
             <label for="phone">Телефон</label>
             <input type="tel" name="phone" id="phone" placeholder="Телефон">
         </p>
+        <p style="padding: 10px">
+            <label for="date">Дата рождения</label>
+            <input type="date" name="date" id="date">
+        </p>
+        <p style="padding: 10px">
+            <label for="email">Почта</label>
+            <input type="email" name="email" id="email" placeholder="Почта">
+        </p>
+            <div><label>Фрукты</label>
+            <label> 
+                <input type="checkbox" name="fruit" >
+                Яблоки
+            </label>
+            <label>   
+                <input type="checkbox" name="fruit" >  Бананы  
+            </label>
+            <label> 
+                <input type="checkbox" name="fruit" >
+               Мандарины
+            </label>
+            <label> 
+                <input type="checkbox" name="fruit" > 
+                Апельсины
+            </label>
+            <label> 
+                <input type="checkbox" name="fruit" >
+                 Груши
+            </label>      
+        </div>
+        <div><label>Времена года</label>
+            <label> 
+                <input type="radio" name="vremya" >
+                 <img src="images/winter.png" alt="зима">
+            </label>
+            <label>   
+                <input type="radio" name="vremya" >  
+               <img src="images/spring.png" alt="весна">
+            </label>
+            <label> 
+                <input type="radio" name="vremya" >
+              <img src="images/summer.png" alt="лето">
+            </label>
+            <label> 
+                <input type="radio" name="vremya" > 
+               <img src="images/autumn.png" alt="осень">
+            </label>
+        </div>
        <div> <p> <label for="course">Klass</label> </p>
         <p>
             <select name="course" id="course">
