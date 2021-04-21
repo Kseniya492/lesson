@@ -19,5 +19,8 @@ function selectColor() {
 	// body...
 	let color = document.getElementById("color").value;
 	document.body.style.background = color;
-	console.log(color);
+	// console.log(color);
+	document.getElementById('result').innerHTML = color;
 }
+	let oper_elements = document.getElementsByClassName('oper');
+	console.log(oper_elements);
